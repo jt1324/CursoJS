@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: lightblue;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1>Starting practing of DOM</h1>
+  <p>Here is the result</p>
+  <p>Learning <strong>DOM</strong> in JavaScript</p>
+  <div id="msg">Click here!</div>
+  <div name="msg-name">Or click here!</div>
+  <div class="msg-class">Or even, click here!</div>
+
+  <script>
+    const p1 = document.getElementsByTagName('p')[0];
+    //Creating variable p1 by tag and adding 1st paragraph/1st <p> - [0] = 1st | [1] = 2nd
+    window.document.write(p1.innerText);
+    //adding the result of p1 to the window/webpage
+    p1.style.color = 'darkred';
+    //changing p1 style
+
+    const web_body = document.body;
+    //Creating variable web_body by tag
+    web_body.style.background = 'grey';
+    //Changing webpage background color
+
+    const d = document.getElementById('msg');
+    //Creating variable d by ID
+    d.style.background = 'white';
+    //Changing background color of <div ID 'msg'>
+
+    const msg_n = document.getElementsByName('msg-name')[0];
+    //Creating variable d by Name
+    msg_n.style.background = 'lightgrey';
+    //Changing background color of <div NAME 'msg-name'>
+
+    const msg_c = document.getElementsByClassName('msg-class')[0];
+    //Creating variable d by Name
+    msg_c.style.background = 'lightyellow';
+    //Changing background color of <div CLASS 'msg-class'>
+
+    const preferable = document.querySelector('div#msg');
+    //Creating variable preferable by id|name|class
+    preferable.style.color = 'red';
+    //Changing font color of id (#) | name (.) | class (.)
+
+    
+
+  </script>
+</body>
+</html>
