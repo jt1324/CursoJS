@@ -18,7 +18,12 @@
   </style>
 </head>
 <body>
-  <div id="area" onclick="clic()" onmouseenter="enter()" onmouseout="leave()">
+
+<!-- commenting to use another way to interact - nothing in HTML, everything in JS
+
+  <div id="area" onclick="clic()" onmouseenter="enter()" onmouseout="leave()">             -->
+  <!--Adding actions in HTML-->
+<!--
     interact...
   </div>
 
@@ -26,6 +31,32 @@
 
     const ar = window.document.getElementById('area');
     //create the const outside the function to be accessible for all functions
+
+    function clic() {
+      ar.innerText = 'Clicked';
+      ar.style.background = 'darkred';
+    }
+    function enter() {
+      ar.innerText = 'Entered';
+    }
+    function leave() {
+      ar.innerText = 'Left';
+      ar.style.background = 'rgb(14, 43, 1)';
+    }
+  </script>-->
+
+  <div id="area">
+    interact...
+  </div>
+
+  <script>
+    const ar = window.document.getElementById('area');
+    //create the const outside the function to be accessible for all functions
+
+    ar.addEventListener('click', clic);
+    ar.addEventListener('mouseenter', enter);
+    ar.addEventListener('mouseout', leave);
+    //Add the action
     
     function clic() {
       ar.innerText = 'Clicked';
@@ -38,6 +69,10 @@
       ar.innerText = 'Left';
       ar.style.background = 'rgb(14, 43, 1)';
     }
+    //call the function and run the actions
+
   </script>
+
+
 </body>
 </html>
