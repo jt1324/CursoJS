@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Status Check</title>
 </head>
 <body>
-  
+  <h1>Imigration Status Checker</h1>
+  Natural from: <input type="text" class="county" >
+  <input type="button" value="check" onclick="county()">
+  <div class="res"></div>
+
+<script>
+  function county() {
+    //const count = document.querySelector('input.country');
+    const res = document.querySelector('div.res');
+    const con = county.text;
+    res.innerHTML = '<p>Living in UK, your status is: </p>'
+    if (con == 'UK') {
+      res.innerHTML = '<p>You are British!</p>'
+    } else {
+      res.innerHTML = '<p>You are an imigrant.</p>'
+    }
+
+  }
 
 
-
-
-
-  const country = 'BR'
-console.log(`living in ${country}!`);
-if (country == 'UK') {
-  console.log('You are British!')
-} else {
-  console.log('You are a imigrant!')
-}
-
+</script>
 
 </body>
 </html>
