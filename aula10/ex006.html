@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM events</title>
+  <style>
+    #area {
+      color: white;
+      background-color: rgb(14, 43, 1);
+      font-family: Arial;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="area" onclick="clic()" onmouseenter="enter()" onmouseout="leave()">
+    interact...
+  </div>
+
+  <script>
+
+    const ar = window.document.getElementById('area');
+    //create the const outside the function to be accessible for all functions
+    
+    function clic() {
+      ar.innerText = 'Clicked';
+      ar.style.background = 'darkred';
+    }
+    function enter() {
+      ar.innerText = 'Entered';
+    }
+    function leave() {
+      ar.innerText = 'Left';
+      ar.style.background = 'rgb(14, 43, 1)';
+    }
+  </script>
+</body>
+</html>
