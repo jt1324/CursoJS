@@ -9,13 +9,13 @@
   <h1>Imigration Status Checker</h1>
   Natural from: <input type="text" class="county" >
   <input type="button" value="check" onclick="county()">
-  <div class="res"></div>
+  <div id="res"></div>
 
 <script>
   function county() {
-    //const count = document.querySelector('input.country');
-    const res = document.querySelector('div.res');
-    const con = county.text;
+    const count = document.querySelector('input.county');
+    const res = document.querySelector('div#res');
+    const con = count.value;
     res.innerHTML = '<p>Living in UK, your status is: </p>'
     if (con == 'UK') {
       res.innerHTML = '<p>You are British!</p>'
