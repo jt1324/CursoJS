@@ -14,15 +14,19 @@
 <script>
   function county() {
     const count = document.querySelector('input.county');
+    //create variable to link input section
     const res = document.querySelector('div#res');
+    //create variable to add the result text to the webpage
     const con = count.value;
+    //create variable to store what was typed in the iput
     res.innerHTML = '<p>Living in UK, your status is: </p>'
+    //fixed text added to variable res
     if (con == 'UK') {
-      res.innerHTML = '<p>You are British!</p>'
+      res.innerHTML += '<p>You are British!</p>'
     } else {
-      res.innerHTML = '<p>You are an imigrant.</p>'
+      res.innerHTML += '<p>You are an imigrant.</p>'
     }
-
+    //adding IF or ELSE to the variable res (+=)
   }
 
 
