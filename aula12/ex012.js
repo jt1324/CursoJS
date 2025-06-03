@@ -1,4 +1,5 @@
-const age = 65;
+const age = 16;
+console.log(`You have ${age} years`)
 if (age < 16) {
   console.log('You cannot vote')
 } else if (age >= 16 && age <18) {
