@@ -14,6 +14,9 @@ do {
 } while (count <= 5)
 
 
+//FOR - RUN, TEST, INCREMENT - RUN, TEST, INCREMENT...
+for(let con = 1; con <= 5; con++ ) {
+  console.log(`step ${con}`)
+}
 
 
- 
