@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age checker</title>
+  <link rel="stylesheet" href="model.css">
+ 
+</head>
+<body>
+  
+  <header>
+    <h1>Age checker</h1>
+  </header>
+  
+  <section>
+      <div>
+        <p>Year of born: 
+          <input type="number" name="txtyear" class="txtyear" min="0">
+        </p>
+        <p>Gender:
+          <input type="radio" name="rad-gender" class="male">
+          <label for="male">Male</label>
+          <input type="radio" name="rad-gender" class="female">
+          <label for="female">Female</label>
+        </p>
+        <p>
+          <input type="button" value="check" onclick="check()">
+        </p>
+      </div>
+      <div class="res">Fill in the information above to see the result</div>
+    </section>
+  
+  <footer>
+    <p>&copy jt1324</p>
+  </footer>
+
+  <script src="model.js"></script>
+</body>
+</html>
