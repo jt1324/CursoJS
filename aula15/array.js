@@ -20,5 +20,5 @@ for (let pos in value) {
   console.log(value[pos])
 }
 
-let poss = value.indexOf(7)
+let poss = value.indexOf(7) // search the position in an array
 console.log(poss)
