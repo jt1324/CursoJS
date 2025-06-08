@@ -1,6 +1,6 @@
 function add() {
   let num = document.getElementById('addtxt')
-  let res = document.getElementById('list')
+  let lis = document.getElementById('list')
   if (num.value.length == Number(0)) {
     alert('Please add a number')
   } else { 
@@ -10,17 +10,17 @@ function add() {
     } else {
       let item = document.createElement('option')
       item.text = `Valor ${n} added`
-      res.appendChild(item)
+      lis.appendChild(item)
     }
   }
 }
 
 function fin() {
-  let res = document.getElementById('list')
-  
-  if (res.value.length == 0) {
+  let lis = document.getElementById('list')
+  let res = document.querySelector('.res')
+  if (lis.value.length == 0) {
     alert('No numbers were added')
   } else {
-    alert('Done')
+    res.innerHTML = 'In total tehre are X numbers.</b> The highest number informed was X.</b> The smaller number informed was X.</b> Summing all the values, we have x.</b> The average of the number added is x.'
   }
 }
